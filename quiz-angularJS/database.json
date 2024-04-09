@@ -1,0 +1,509 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Huỳnh Kha",
+      "email": "khakha5087@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "name": "Kim Nhi",
+      "email": "nhinhi@gmail.com",
+      "password": "123"
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Công nghệ thông tin"
+    },
+    {
+      "id": "2",
+      "name": "Digital marketing"
+    },
+    {
+      "id": "3",
+      "name": "Thiết kế đồ họa"
+    },
+    {
+      "id": "4",
+      "name": "Công nghệ kỹ thuật cơ khí"
+    },
+    {
+      "id": "5",
+      "name": "Quản trị kinh doanh"
+    },
+    {
+      "id": "6",
+      "name": "Tự động hoá"
+    }
+  ],
+  "quizs": [
+    {
+      "id": "1",
+      "iddm": "1",
+      "name": "Trắc nghiệm về HTML + CSS",
+      "content": "Khóa học này nhằm mục đích giúp bạn hiểu rõ về HTML và CSS thông qua việc học qua các bài trắc nghiệm. HTML (Hyper Text Markup Language) và CSS (Cascading Style Sheets) là hai ngôn ngữ cơ bản và quan trọng nhất trong việc phát triển trang web. HTML được sử dụng để tạo ra cấu trúc và nội dung của trang web, trong khi CSS được sử dụng để định dạng và trang trí cho trang web.",
+      "image": "html.jpg",
+      "view": 1244,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 3,
+      "haha": 3,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Đâu là phần tử HTML tạo ra 1 danh sách đầu mục bằng số?",
+          "options": [
+            {
+              "id": 1,
+              "content": "<dl>"
+            },
+            {
+              "id": 2,
+              "content": "<list>"
+            },
+            {
+              "id": 3,
+              "content": "<ol>"
+            },
+            {
+              "id": 4,
+              "content": "<ul>"
+            }
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "content": "HTML là viết tắt của gì?",
+          "options": [
+            {
+              "id": 1,
+              "content": "High Text Markup Language"
+            },
+            {
+              "id": 2,
+              "content": "Hyper Text Markup Language"
+            },
+            {
+              "id": 3,
+              "content": "Markup Language Hyper Text"
+            },
+            {
+              "id": 4,
+              "content": "Markup Language High Text"
+            }
+          ],
+          "answer": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "iddm": "1",
+      "name": "Trắc nghiệm về AngularJS",
+      "content": "Khóa học này nhằm mục đích giúp học viên hiểu rõ về AngularJS - một framework JavaScript phổ biến được sử dụng để phát triển các ứng dụng web động. AngularJS cung cấp một cách tiếp cận linh hoạt và hiệu quả để xây dựng các ứng dụng web phức tạp một cách nhanh chóng và dễ dàng bảo trì.",
+      "image": "angularJS.jpg",
+      "view": 553,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 19,
+      "haha": 0,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Để liên kết dữ liệu từ component với template trong AngularJS, bạn sử dụng cú pháp nào?",
+          "options": [
+            {
+              "id": 1,
+              "content": "{{ }}"
+            },
+            {
+              "id": 2,
+              "content": "()"
+            },
+            {
+              "id": 3,
+              "content": "[]"
+            },
+            {
+              "id": 4,
+              "content": "<>"
+            }
+          ],
+          "answer": [
+            1
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Đâu là cách khai báo một module trong AngularJS?",
+          "options": [
+            {
+              "id": 1,
+              "content": "ng-app"
+            },
+            {
+              "id": 2,
+              "content": "ng-controller"
+            },
+            {
+              "id": 3,
+              "content": "ng-module"
+            },
+            {
+              "id": 4,
+              "content": " angular.module"
+            }
+          ],
+          "answer": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "iddm": "1",
+      "name": "Trắc nghiệm Mysql",
+      "content": "Khóa học này nhằm mục đích cung cấp kiến thức cơ bản và nâng cao về MySQL - một hệ quản trị cơ sở dữ liệu phổ biến được sử dụng rộng rãi trong phát triển phần mềm. MySQL cung cấp các tính năng mạnh mẽ để quản lý dữ liệu và là một phần không thể thiếu trong việc xây dựng các ứng dụng web và hệ thống thông tin.",
+      "image": "mysql.jpg",
+      "view": 122,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 0,
+      "haha": 0,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Câu lệnh nào dùng để lấy dữ liệu từ một bảng trong MySQL?",
+          "options": [
+            {
+              "id": 1,
+              "content": " SHOW DATABASES;"
+            },
+            {
+              "id": 2,
+              "content": "GET DATA FROM table_name;"
+            },
+            {
+              "id": 3,
+              "content": " SELECT * FROM table_name;"
+            },
+            {
+              "id": 4,
+              "content": "INSERT INTO table_name;"
+            }
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Để tạo một bảng mới trong MySQL, bạn sử dụng câu lệnh nào?",
+          "options": [
+            {
+              "id": 1,
+              "content": " INSERT INTO table_name;"
+            },
+            {
+              "id": 2,
+              "content": " MAKE TABLE table_name;"
+            },
+            {
+              "id": 3,
+              "content": "ADD TABLE table_name;"
+            },
+            {
+              "id": 4,
+              "content": "CREATE TABLE table_name;"
+            }
+          ],
+          "answer": [
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "iddm": "2",
+      "name": "Cơ bản về Marketing",
+      "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
+      "image": "marketing.png",
+      "view": 132,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 0,
+      "haha": 0,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Tại sao việc xây dựng một chiến lược marketing là quan trọng đối với một doanh nghiệp?",
+          "options": [
+            {
+              "id": 1,
+              "content": "Để tạo ra các sản phẩm mới và cải thiện chất lượng sản phẩm."
+            },
+            {
+              "id": 2,
+              "content": "Để thu hút nhân viên tài năng vào công ty."
+            },
+            {
+              "id": 3,
+              "content": "Để tăng lợi nhuận và tăng doanh số bán hàng."
+            },
+            {
+              "id": 4,
+              "content": "Để tạo ra các quảng cáo độc đáo và sáng tạo."
+            }
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Định nghĩa khái niệm phân khúc thị trường và giải thích tại sao việc phân khúc hóa thị trường là quan trọng?",
+          "options": [
+            {
+              "id": 1,
+              "content": "Phân khúc thị trường là quá trình tạo ra các sản phẩm mới dựa trên nhu cầu của thị trường."
+            },
+            {
+              "id": 2,
+              "content": " Phân khúc thị trường là việc chia nhỏ thị trường thành các phân đoạn nhỏ hơn dựa trên các đặc điểm chung."
+            },
+            {
+              "id": 3,
+              "content": " Phân khúc thị trường là quá trình quảng cáo sản phẩm cho một nhóm đối tượng cụ thể."
+            },
+            {
+              "id": 4,
+              "content": " Phân khúc thị trường là quá trình tìm hiểu về ý kiến của khách hàng về sản phẩm."
+            }
+          ],
+          "answer": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "iddm": "2",
+      "name": "Social Media Marketing",
+      "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
+      "image": "socialMKT.png",
+      "view": 178,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 0,
+      "haha": 0,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Facebook, Instagram, Twitter là ví dụ của loại nào trong Digital Marketing?",
+          "options": [
+            {
+              "id": 1,
+              "content": " Email Marketing."
+            },
+            {
+              "id": 2,
+              "content": "Content Marketing."
+            },
+            {
+              "id": 3,
+              "content": "Social Media Marketing."
+            },
+            {
+              "id": 4,
+              "content": "Search Engine Marketing."
+            }
+          ],
+          "answer": [
+            3
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Công cụ nào thường được sử dụng để quản lý và lên lịch bài đăng trên các mạng xã hội?",
+          "options": [
+            {
+              "id": 1,
+              "content": "Hootsuite"
+            },
+            {
+              "id": 2,
+              "content": " Photoshop"
+            },
+            {
+              "id": 3,
+              "content": " WordPress"
+            },
+            {
+              "id": 4,
+              "content": "Google Analytics."
+            }
+          ],
+          "answer": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "iddm": "2",
+      "name": " Email Marketing",
+      "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
+      "image": "emailMKT.png",
+      "view": 126,
+      "star": 0,
+      "limit": 1,
+      "time": 15,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59",
+      "score": 100,
+      "like": 0,
+      "haha": 0,
+      "dislike": 0,
+      "questions": [
+        {
+          "id": 1,
+          "content": "Mục đích chính của Email Marketing là gì?",
+          "options": [
+            {
+              "id": 1,
+              "content": " Xây dựng thương hiệu."
+            },
+            {
+              "id": 2,
+              "content": "Tạo ra doanh số bán hàng."
+            },
+            {
+              "id": 3,
+              "content": "Tăng lượng truy cập trang web."
+            },
+            {
+              "id": 4,
+              "content": "Tất cả các phương án trên đều đúng."
+            }
+          ],
+          "answer": [
+            2
+          ]
+        },
+        {
+          "id": 2,
+          "content": "Đối với một chiến dịch Email Marketing hiệu quả, điều quan trọng nhất là gì?",
+          "options": [
+            {
+              "id": 1,
+              "content": "Thời gian gửi email."
+            },
+            {
+              "id": 2,
+              "content": " Tần suất gửi email."
+            },
+            {
+              "id": 3,
+              "content": " Chất lượng nội dung email."
+            },
+            {
+              "id": 4,
+              "content": "Số lượng email gửi đi."
+            }
+          ],
+          "answer": [
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "scores": [
+    {
+      "id": "1",
+      "idUser": 1,
+      "idQuiz": 1,
+      "score": 100,
+      "startDate": "2024-01-13 12:20:00",
+      "endDate": "2024-01-30 23:59:59"
+    },
+    {
+      "id": "4432",
+      "idUser": "2",
+      "idQuiz": "1",
+      "score": 50,
+      "startDate": "2024-04-08 12:54:21",
+      "endDate": "2024-04-08 13:03:17"
+    },
+    {
+      "id": "ca25",
+      "idUser": "1",
+      "idQuiz": "1",
+      "score": 100,
+      "startDate": "2024-04-08 21:15:59",
+      "endDate": "2024-04-08 21:16:07"
+    },
+    {
+      "id": "7682",
+      "idUser": "1",
+      "idQuiz": "1",
+      "score": 100,
+      "startDate": "2024-04-08 21:15:59",
+      "endDate": "2024-04-08 21:16:07"
+    },
+    {
+      "id": "dc66",
+      "idUser": "1",
+      "idQuiz": "1",
+      "score": 0,
+      "startDate": "2024-04-08 21:16:47",
+      "endDate": "2024-04-08 21:22:42"
+    },
+    {
+      "id": "c5b2",
+      "idUser": "1",
+      "idQuiz": "1",
+      "score": 0,
+      "startDate": "2024-04-08 21:16:47",
+      "endDate": "2024-04-08 21:22:43"
+    }
+  ]
+}

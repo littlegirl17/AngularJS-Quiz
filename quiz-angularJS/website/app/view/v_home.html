@@ -1,0 +1,209 @@
+    <div class="card text-bg-dark border-0 rounded-0">
+        <img src="public/img/banner.png" class="card-img object-fit-cover rounded-0" alt="..." style="height: 500px;" >
+        <div class="card-img-overlay d-flex align-items-center justify-content-center text-dark">
+            <div class="text-center">
+                <p class="card-text fs-3">Chào mừng bạn đến với</p>
+                <h1 class="card-title display-3 fw-bolder">Thế giới trắc nghiệm</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mt-5">
+                <ul class="list-group categpry_a">
+                    <li class="list-group-item rounded-0 border-0 active list_left" aria-current="true">Chủ đề</li>
+                    <li ng-repeat="dsdm in listCate" class="list-group-item"><a href="#!category/{{dsdm.id}}" class=" text-dark  " >{{dsdm.name}}</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9" id="">
+                <h2 id="" class="text-center m-5" >
+                    Quizs
+                </h2>
+                
+                    <div class="row">
+
+                        <div ng-repeat="ds in listQuiz | filter:searchQuiz | limitTo:6" class="col-md-4 col-sm-6 mb-4">
+                            <div class="card shadow border-0 hover-trigger" >
+                                <div class="position-relative">
+                                    <div class="badge-top">
+                                        #{{$index+1}} <!-- Hiển thị chỉ mục của phần tử hiện tại -->
+                                    </div>
+                                    <img src="public/img/{{ds.image}}" class="card-img-top" alt="...">
+                                    <a href="#!detail/{{ds.id}}" class="show-hover btn btn-light rounded-pill position-absolute end-0 bottom-0 mb-3 me-3"><i class="fa-regular fa-eye"></i>Xem chi tiết</a>
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        {{ds.name}}
+                                    </h5>
+                                    
+                                    <div class="text-warning mb-3 mt-4 d-flex align-items-center">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <span class="text-dark ms-2">{{ds.view}}</span>
+                                    </div>
+                                    
+                                    <div class="card-title" ng-switch="ds.iddm">
+                                        <div ng-switch-when="1">
+                                            Chủ đề: Công nghệ tông tin
+                                        </div>
+                                        <div ng-switch-when="2">
+                                            Chủ đề: Digital Marketing
+                                        </div>
+                                        <div ng-switch-when="3">
+                                            Chủ đề: Thiết kế đồ họa
+                                        </div>
+                                        <div ng-switch-when="4">
+                                            Chủ đề: Công nghệ kỹ thuật cơ khí
+                                        </div>
+                                        <div ng-switch-when="5">
+                                            Chủ đề: Quản trị kinh doanh
+                                        </div>
+                                        <div ng-switch-when="6">
+                                            Chủ đề: Tự động hoá
+                                        </div>
+                                    </div>
+                                    <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" ng-click="showQuiz(ds)">[Xem thêm]</a> <!--(ds) nghĩa là từ listQuiz mình gán cho ds nên cầm nó để lấy ra-->
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-sm-12 mb-5">
+                            <img src="public/img/bannerItem.png" class="card-img-top" alt="" id="bannerItemLeft" >
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <img src="public/img/bannerItem2.png" class="card-img-top" alt="" id="bannerItemRight">
+                        </div>
+                    </div>
+                    
+
+                    <h2 class="text-center m-5">TÀI LIỆU THAM KHẢO</h2>
+                    <div class="row ">
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3 mb-5">
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3 " style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-xs-6 mb-3" style="height: 200px;">
+                            <div class="card shadow">
+                                <img src="public/img/quiz.png" class="img-fluid img-thumbnail" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text"><a href="#" >Bài trắc nghiệm khoa học nhân văn I</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content p-3">
+            <div class="modal-header border-0">
+            <h1 class="modal-title fs-3" id="exampleModalLabel">{{modal.name}}</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {{modal.content}}
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
+  

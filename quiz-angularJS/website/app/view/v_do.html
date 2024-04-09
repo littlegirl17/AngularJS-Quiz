@@ -1,0 +1,50 @@
+<div class="container" id="do-quiz" ng-show="!ketqua">
+    <div class="header_do d-flex justify-content-between" style="padding-top: 90px;">
+        <div class="">
+            <h2 class="" >Bắt đầu làm bài</h2>
+        </div>
+        
+        <div class="phutgiay">
+            <span>{{phut}}</span> : <span>{{giay}}</span>
+        </div>
+    </div>
+    
+    <div class="card mt-3 shadow_do" ng-repeat="question in doQuiz.questions">
+        <div class="card-body">
+            <h5 class="card-title">Câu hỏi {{$index+1}}</h5>
+            <p>{{question.content}}</p>
+            <form>
+                <div class="" ng-repeat="option in question.options">
+                    <div class="form-check">
+                        <label class="optionList form-check-label" for="option-{{option.id}}-question-{{question.id}}">
+                            <input class="form-check-input" type="{{option.type}}" name="option-question-{{question.id}}" id="option-{{option.id}}-question-{{question.id}}" value="{{option.id}}" ng-model="selectedAnswer[question.id][option.id]"  ng-click="toggleChecked(selectedAnswer[question.id][option.id],'option-question-' + question.id, option.id,option.type)">
+                            {{option.content}}
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="text-center pt-3">
+            <a href="" class="button_header" ng-click="submitQuiz()">Nộp bài</a>
+        </div>
+    </div>
+</div>
+
+
+<div id="scoree"  ng-show="ketqua" >
+    <div class="showketqua">
+        <div class="showitem">
+            <h4 >Kết quả của bạn </h4>
+        
+            <h4>
+                <span id="cau-dung">{{ketqua.SoCauDung}}</span>/<span id="so-cau">{{ketqua.soCau}}</span>
+            </h4>
+            <h4> Đạt <strong id="diem">{{ketqua.diem}}</strong> điểm (<span id="phan-tram">{{ketqua.tiLe}}</span>%)</h4>
+        </div>
+    </div>
+    <div class="showitemHome">
+        <a href="#!/" class="button_header" >Quay về trang chủ</a>
+    </div>
+</div>

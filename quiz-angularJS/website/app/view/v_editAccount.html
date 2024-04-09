@@ -1,0 +1,19 @@
+<div class="main_editMyacc">
+    <div class="editMyacc" style="margin-top: 80px;">
+        <div class="m-3" >
+            <h4> Cập nhật tài khoản</h4> 
+            <form name="myForm" ng-submit="editAccount()">
+                <div class="alert alert-success p-2" ng-show="thongbao" >Cập nhật thành công</div>
+                <div class="">
+                    <input type="text" name="user.name" class="form-control" ng-model="user.name" required><br>
+                    <div class="alert alert-danger p-2"  ng-show="myForm['user.name'].$error.required && myForm['user.name'].$touched">Không để trống họ tên!</div>
+                </div>
+                <div class="">
+                    <input type="text" class="form-control" ng-model="user.email" required><br>
+                    <div class="alert alert-danger p-2"  ng-show="myForm['user.email'].$error.required && myForm['user.email'].$touched">Không để trống email!</div>
+                </div>
+                <input type="submit" class="btn button_header" value="Cập nhật">
+            </form>
+        </div>
+    </div>
+</div>

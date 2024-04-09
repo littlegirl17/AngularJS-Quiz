@@ -1,0 +1,11 @@
+khởi tạo file json package 
+npm install json-server
+
+chạy file json vào nơi để file json và bật terminal
+npx json-server database.json
+    http://localhost:3000/users
+    http://localhost:3000/category
+    ....
+
+
+cd ../

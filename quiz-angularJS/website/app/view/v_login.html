@@ -1,0 +1,27 @@
+
+
+    <main class="login_main mt-5">
+        <div class="container login ">
+            <div class="login_form">
+                <form action="" name="" ng-submit="login()">
+                    <div class="imgLogin">
+                        <img src="./public/img/logoLogin.png" class="" alt="">
+                    </div>
+                    <h2 class="text-center">ĐĂNG NHẬP</h2>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@gmail.com" ng-model="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Mật khẩu:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu của bạn" ng-model="password" required>
+                    </div>
+                    <input type="submit" class="button_header m-3" value="Xác nhận">
+                    <div ng-show="thongBaoError" class="alert alert-danger mt-3">
+                        Đăng nhập thất bại! Email hoặc mật khẩu đã sai!
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </main>

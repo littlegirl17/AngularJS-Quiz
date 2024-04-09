@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tilt+Warp&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.nav_top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* Màu nền của header khi cuộn */
+    transition: top 0.3s; /* Hiệu ứng di chuyển khi cuộn */
+}
+
+    
+    .header_top{
+        height: 35px;
+        line-height: 35px;
+    }
+    
+    .navbar{
+        min-height: 70px;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+    }
+    .nav_top {
+        background-image: linear-gradient(112.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(157.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(45deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(90deg, rgb(71, 69, 135),rgb(241, 26, 171)); background-blend-mode:overlay,overlay,overlay,normal;
+    }
+
+    .list_left{
+        background-image: linear-gradient(112.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(157.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(45deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(90deg, rgb(71, 69, 135),rgb(241, 26, 171)); background-blend-mode:overlay,overlay,overlay,normal;
+    } 
+    .nav-link{
+        color: #fff;
+    }
+
+    .navbar-brand{
+        color: #fff;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: 100%; /* Chiều cao tùy chỉnh */
+        object-fit: cover; /* Đảm bảo hình ảnh đầy đủ kích thước và không bị méo. */
+    }
+
+    .card-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .login{
+        width: 400px;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+
+    .login_main{
+        background-image: linear-gradient(0deg, transparent 0%, transparent 58%,rgba(104, 104, 104,0.05) 58%, rgba(104, 104, 104,0.05) 92%,transparent 92%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 34%,rgba(104, 104, 104,0.05) 34%, rgba(104, 104, 104,0.05) 77%,transparent 77%, transparent 100%),linear-gradient(0deg, transparent 0%, transparent 33%,rgba(104, 104, 104,0.05) 33%, rgba(104, 104, 104,0.05) 53%,transparent 53%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+    }
+    
+    .login_form{
+        background-color: #fff;
+        padding: 20px 40px;
+        border-radius: 15px;
+    }
+
+    .imgLogin{
+        text-align: center;
+    }
+    .imgLogin img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .imgRegister{
+        text-align: center;
+    }
+    .imgRegister img{
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    /*
+
+    */
+    .register{
+        width: 400px;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+
+    .register_main{
+        background-image: repeating-linear-gradient(112.5deg, rgb(255,255,255) 0px, rgb(255,255,255) 25px,transparent 25px, transparent 27px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 25px,transparent 25px, transparent 27px),repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 25px,transparent 25px, transparent 27px),linear-gradient(90deg, rgb(154, 20, 236),rgb(186, 17, 137));
+    }
+    .register_form{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        background-color: #fff;
+        padding: 20px 40px;
+        border-radius: 15px;
+    }
+/*
+    button
+*/
+.button_center {
+    display: flex;
+    justify-content: center;
+}
+    .button_header {
+        width: 150px;
+        position: relative;
+        padding: 6px 20px;
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #569cd0;
+        background: #fff;
+        cursor: pointer;
+        transition: ease-out 0.5s;
+        border: 2px solid #569cd0;
+        box-shadow: inset 0 0 0 0 #569cd0;
+    }
+    
+    .button_header:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #569cd0;
+        border: 2px solid #fff;
+    }
+    
+    .button_header:active {
+    transform: scale(0.9);
+    }
+    
+
+/*
+*/
+.categpry_a li a{
+    text-decoration: none;
+}
+.categpry_a li a:hover{
+    color: #C81E3A;
+    text-decoration: underline;
+}
+/*
+    search
+*/
+   
+/*
+
+*/
+    .card-img-top{
+        height: 300px;
+        object-fit: cover;
+    }
+    
+    .card_item{
+       
+        height: 200px;
+    }
+/*
+    footer
+*/
+.footer{
+    background-image: linear-gradient(112.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(157.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(45deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(90deg, rgb(71, 69, 135),rgb(241, 26, 171)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+
+.footer a{
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+.img-footer{
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+}
+.img-footer img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/*
+*/
+.card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    overflow: hidden; /* Ngăn chặn phần nội dung trong card-body bị tràn ra ngoài */
+}
+
+.card img {
+    transition: transform 500ms;
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Phóng to ảnh khi hover vào */
+}
+/*
+*/
+.main_editMyacc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editMyacc{
+    width: 500px;
+}
+
+/*
+*/
+.collapse ul li a:hover{
+    color: #0d93aa;
+}
+
+/**/
+.detail{
+    background-image: linear-gradient(112.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(157.5deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(135deg, rgb(214, 214, 214) 0%, rgb(214, 214, 214) 10%,rgb(195, 195, 195) 10%, rgb(195, 195, 195) 53%,rgb(176, 176, 176) 53%, rgb(176, 176, 176) 55%,rgb(157, 157, 157) 55%, rgb(157, 157, 157) 60%,rgb(137, 137, 137) 60%, rgb(137, 137, 137) 88%,rgb(118, 118, 118) 88%, rgb(118, 118, 118) 91%,rgb(99, 99, 99) 91%, rgb(99, 99, 99) 100%),linear-gradient(90deg, rgb(195, 195, 195),rgb(228, 228, 228)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+
+.detail_box{
+    width: 1170px;
+    padding: 80px 0;
+    
+}
+/*
+
+*/
+.shadow_do{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.result{
+    background-image: repeating-linear-gradient(356deg, rgb(255,255,255) 0px, rgb(255,255,255) 13px,transparent 13px, transparent 16px),repeating-linear-gradient(21deg, rgb(255,255,255) 0px, rgb(255,255,255) 13px,transparent 13px, transparent 16px),repeating-linear-gradient(268deg, rgb(255,255,255) 0px, rgb(255,255,255) 13px,transparent 13px, transparent 16px),repeating-linear-gradient(294deg, rgb(255,255,255) 0px, rgb(255,255,255) 13px,transparent 13px, transparent 16px),linear-gradient(90deg, rgb(11, 179, 230),rgb(192, 156, 152));
+}
+.result_box{
+    width: 1000px;
+    min-height: 500px;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+/*
+
+*/
+
+/* CSS */
+#quizzesTitle span {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+}
+
+#quizzesTitle span.show {
+    opacity: 1;
+}
+
+/*
+*/
+
+
+.show-hover{
+    display: none;
+}
+
+.hover-trigger:hover .show-hover{
+    display: block;
+}
+
+.badge-top{
+    width: 45px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background: #C81E3A;
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+/* after cho phép mình gắn thêm 1 cái j đó */
+
+.badge-top::after{
+    content: "";
+    display: block;
+    border-width: 0 20px 15px;
+    border-color: #ffff0000 #C81E3A;
+    border-style: solid;
+    bottom: -15px;
+    left:0;
+    position: absolute;
+    width: 45px;
+
+}
+
+#do-quiz{
+    user-select: none;
+}
+
+.phutgiay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: #fff;
+    width: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(112.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(157.5deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(45deg, rgb(250, 109, 130) 0%, rgb(250, 109, 130) 3%,rgb(219, 107, 130) 3%, rgb(219, 107, 130) 34%,rgb(187, 104, 131) 34%, rgb(187, 104, 131) 46%,rgb(156, 102, 131) 46%, rgb(156, 102, 131) 51%,rgb(124, 99, 132) 51%, rgb(124, 99, 132) 52%,rgb(93, 97, 132) 52%, rgb(93, 97, 132) 76%,rgb(61, 94, 133) 76%, rgb(61, 94, 133) 84%,rgb(30, 92, 133) 84%, rgb(30, 92, 133) 100%),linear-gradient(90deg, rgb(71, 69, 135),rgb(241, 26, 171)); background-blend-mode:overlay,overlay,overlay,normal;
+}
+#scoree{
+    padding: 80px 0;
+    min-height: 500px;
+}
+.showketqua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.showitemHome{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.showitem{
+    color: rgb(67, 66, 66);
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}

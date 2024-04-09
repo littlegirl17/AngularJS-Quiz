@@ -1,0 +1,29 @@
+
+
+    <main class="result d-flex justify-content-center">
+        <div class="container d-flex justify-content-center">
+            <div class="result_box ">
+            <h2 class="">Điểm quiz đã làm</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Quiz</th>
+                        <th>Người thực hiện</th>
+                        <th>Thời gian bắt đầu </th>
+                        <th>Thời gian kết thúc </th>
+                        <th>Điểm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="diem in score">
+                        <td>{{diem.quizName}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{diem.startDate}}</td>
+                        <td>{{diem.endDate}}</td>
+                        <td>{{diem.score}} điểm</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </main>

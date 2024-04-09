@@ -1,0 +1,53 @@
+
+
+    <main class="detail ">
+        <div class="container d-flex justify-content-center">
+            <div class="detail_box ">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="mt-5">
+                            <img src="public/img/{{quizDetail.image}}" alt="" class="img-fluid" style="width: 80vw; max-height: 500px; object-fit: cover;">
+                        </div>
+                        <!-- max-height: 500px; để giữ cho chiều cao của ảnh không vượt quá 500px có nghĩa là khi chiều cao thực của ảnh lớn hơn 500px, nó sẽ tự động được thu nhỏ xuống để fit vào kích thước 500px.
+                        min-height: 500px; trong CSS là để đảm bảo rằng một phần tử sẽ có ít nhất một chiều cao là 500px. Ngay cả khi nội dung bên trong không đủ để đạt đến chiều cao này, phần tử sẽ vẫn có ít nhất 500px chiều cao. -->
+                        
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class=" mt-5 ">
+                            <div class="card-body ">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="card-title">{{quizDetail.name}} </h5>
+                                    <p class=""><i class="fa-solid fa-eye fa-sm"></i> {{quizDetail.view}}</p>
+                                    
+                                </div>
+                                <div class="">
+                                    <h6>Mô tả:</h6>
+                                    <p class="">{{quizDetail.content}}</p>
+                                    <p class="card-text">Thời gian làm bài: {{quizDetail.time}} phút</p>
+                                    <p class="card-text">Số câu hỏi: {{quizDetail.questions.length}} câu</p>
+                                    <p class="card-text">Số lượt làm bài: {{quizDetail.limit}} lần</p>
+                                    <p class="card-text">Điểm tối đa: {{quizDetail.score}} điểm</p>
+                                    <p class="card-text">{{Date(quizDetail.startDate) | date:'HH:mm dd/MM/yyyy'}} </p>
+                                    <a href="#!do/{{quizDetail.id}}" class="button_header">Bắt đầu làm</a>
+                                </div>
+                                <hr class="mt-5">
+                                <div class="mt-3 d-flex justify-content-end">
+                                    <div class="">
+                                        <h5 class="text-center p-1">Cảm xúc của bạn</h5>
+                                        <button class="btn btn-outline-primary" ng-click="reaction('like')"><i class="fa-solid fa-thumbs-up"></i> {{quizDetail.like}}</button>
+                                        <button class="btn btn-outline-warning" ng-click="reaction('haha')"><i class="fa-solid fa-face-laugh-squint"></i> {{quizDetail.haha}}</button>
+                                        <button class="btn btn-outline-danger" ng-click="reaction('dislike')"><i class="fa-solid fa-thumbs-down"></i> {{quizDetail.dislike}}</button>
+                                        <button class="btn btn-outline-success"><i class="fa-solid fa-share"></i>Chia sẽ</button>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div> 
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>

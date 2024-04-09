@@ -1,0 +1,47 @@
+
+    <main class="register_main mt-5">
+        <div class="container register">
+            <form action="" name="myForm" ng-submit="register()">
+                    <div class=" alert alert-success" ng-if="thongBao">
+                        {{thongBao}}
+                    </div>
+                    <div class="register_form">
+                        <div class="imgRegister">
+                            <img src="public/img/logoRegister.png" class="" alt="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Họ tên:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nhập họ tên của bạn!" name="user.name" ng-model="user.name" required>
+                        </div>
+                        <div class="p-1 alert alert-danger" style="margin-top: 10px;" ng-show="myForm['user.name'].$invalid && myForm['user.name'].$touched">
+                            Vui lòng nhập họ tên!
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@gmail.com" name="user.email" ng-model="user.email" required>
+                        </div>
+                        <div ng-if="myForm['user.email'].$invalid && myForm['user.email'].$touched">
+                            <div ng-if="myForm['user.email'].$error.required" class="p-1 alert alert-danger" style="margin-top: 10px;">Vui lòng nhập email!</div>
+                            <div ng-if="myForm['user.email'].$error.email" class="p-1 alert alert-danger" style="margin-top: 10px;">Email không hợp lệ!</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mật khẩu:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu của bạn" name="user.password" ng-model="user.password" required>
+                        </div>
+                        <div class="p-1 alert alert-danger" style="margin-top: 10px;" ng-if="myForm['user.password'].$invalid && myForm['user.password'].$touched">
+                            Vui lòng nhập mật khẩu!
+                        </div>
+                        <input type="submit" class="button_header m-3" value="Xác nhận">
+                    </div>
+            </form>
+        </div>
+    </main>
+    
+    <!-- 
+        ng-if là một directive được sử dụng để hiển thị hoặc ẩn một phần tử HTML dựa trên một điều kiện logic
+        name cũng là cách xác định trường trong form khi kiểm tra validation hoặc truy cập từ controller. 
+        $touched được sử dụng để xác định xem một trường nhập liệu đã được chạm vào hay chưa.
+        $error là một đối tượng chứa các thuộc tính lỗi của trường nhập liệu.
+    -->
