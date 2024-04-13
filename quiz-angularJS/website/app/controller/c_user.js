@@ -48,7 +48,7 @@ myApp.controller('registerController', function($scope,$http){
 myApp.controller('editAccountController', function($scope,$http,$rootScope){
     $scope.thongbao = false;
     $scope.editAccount = function(){
-        $http.put('http://localhost:3000/users/'+$scope.user.id,$scope.user).then(
+        $http.put('http://localhost:3000/users/'+$scope.user.id,$scope.user).then( //$http.put dùng để gửi yêu cầu để nó cập nhật 1 dữ liệu mới trên máy chủ
             function(res){
                 // Cập nhật dữ liệu mới vào $rootScope.user
                 $rootScope.user = res.data;

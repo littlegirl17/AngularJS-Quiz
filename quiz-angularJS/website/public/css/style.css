@@ -344,3 +344,31 @@ body{
     padding: 10px 0;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+/*
+*/
+/* Thiết lập kiểu cho select box */
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    max-width: 60px;
+    font-size: 16px;
+  }
+  
+  /* Thiết lập kiểu cho option */
+  .custom-select option {
+    padding: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Thiết lập kiểu cho option khi hover */
+  .custom-select option:hover {
+    background-color: #f0f0f0;
+  }
+  

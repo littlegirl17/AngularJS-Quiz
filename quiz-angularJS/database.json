@@ -46,7 +46,7 @@
       "name": "Trắc nghiệm về HTML + CSS",
       "content": "Khóa học này nhằm mục đích giúp bạn hiểu rõ về HTML và CSS thông qua việc học qua các bài trắc nghiệm. HTML (Hyper Text Markup Language) và CSS (Cascading Style Sheets) là hai ngôn ngữ cơ bản và quan trọng nhất trong việc phát triển trang web. HTML được sử dụng để tạo ra cấu trúc và nội dung của trang web, trong khi CSS được sử dụng để định dạng và trang trí cho trang web.",
       "image": "html.jpg",
-      "view": 1244,
+      "view": 1266,
       "star": 0,
       "limit": 1,
       "time": 15,
@@ -116,7 +116,7 @@
       "name": "Trắc nghiệm về AngularJS",
       "content": "Khóa học này nhằm mục đích giúp học viên hiểu rõ về AngularJS - một framework JavaScript phổ biến được sử dụng để phát triển các ứng dụng web động. AngularJS cung cấp một cách tiếp cận linh hoạt và hiệu quả để xây dựng các ứng dụng web phức tạp một cách nhanh chóng và dễ dàng bảo trì.",
       "image": "angularJS.jpg",
-      "view": 553,
+      "view": 562,
       "star": 0,
       "limit": 1,
       "time": 15,
@@ -185,7 +185,7 @@
       "name": "Trắc nghiệm Mysql",
       "content": "Khóa học này nhằm mục đích cung cấp kiến thức cơ bản và nâng cao về MySQL - một hệ quản trị cơ sở dữ liệu phổ biến được sử dụng rộng rãi trong phát triển phần mềm. MySQL cung cấp các tính năng mạnh mẽ để quản lý dữ liệu và là một phần không thể thiếu trong việc xây dựng các ứng dụng web và hệ thống thông tin.",
       "image": "mysql.jpg",
-      "view": 122,
+      "view": 125,
       "star": 0,
       "limit": 1,
       "time": 15,
@@ -254,14 +254,14 @@
       "name": "Cơ bản về Marketing",
       "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
       "image": "marketing.png",
-      "view": 132,
+      "view": 134,
       "star": 0,
       "limit": 1,
       "time": 15,
       "startDate": "2024-01-13 12:20:00",
       "endDate": "2024-01-30 23:59:59",
       "score": 100,
-      "like": 0,
+      "like": 1,
       "haha": 0,
       "dislike": 0,
       "questions": [
@@ -323,7 +323,7 @@
       "name": "Social Media Marketing",
       "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
       "image": "socialMKT.png",
-      "view": 178,
+      "view": 179,
       "star": 0,
       "limit": 1,
       "time": 15,
@@ -392,7 +392,7 @@
       "name": " Email Marketing",
       "content": "Trong phần này, người học thường được giải thích về tầm quan trọng của Marketing đối với doanh nghiệp, cách Marketing ảnh hưởng đến lợi nhuận và doanh số bán hàng, cũng như về các khái niệm cơ bản như phân khúc thị trường.",
       "image": "emailMKT.png",
-      "view": 126,
+      "view": 128,
       "star": 0,
       "limit": 1,
       "time": 15,
@@ -459,51 +459,27 @@
   "scores": [
     {
       "id": "1",
-      "idUser": 1,
-      "idQuiz": 1,
-      "score": 100,
-      "startDate": "2024-01-13 12:20:00",
-      "endDate": "2024-01-30 23:59:59"
-    },
-    {
-      "id": "4432",
-      "idUser": "2",
+      "idUser": "1",
       "idQuiz": "1",
       "score": 50,
-      "startDate": "2024-04-08 12:54:21",
-      "endDate": "2024-04-08 13:03:17"
+      "startDate": "2024-04-11 11:26:06",
+      "endDate": "2024-04-11 11:26:13"
     },
     {
-      "id": "ca25",
+      "id": "a5f7",
       "idUser": "1",
       "idQuiz": "1",
       "score": 100,
-      "startDate": "2024-04-08 21:15:59",
-      "endDate": "2024-04-08 21:16:07"
+      "startDate": "2024-04-11 16:22:37",
+      "endDate": "2024-04-11 16:22:52"
     },
     {
-      "id": "7682",
+      "id": "3a11",
       "idUser": "1",
       "idQuiz": "1",
       "score": 100,
-      "startDate": "2024-04-08 21:15:59",
-      "endDate": "2024-04-08 21:16:07"
-    },
-    {
-      "id": "dc66",
-      "idUser": "1",
-      "idQuiz": "1",
-      "score": 0,
-      "startDate": "2024-04-08 21:16:47",
-      "endDate": "2024-04-08 21:22:42"
-    },
-    {
-      "id": "c5b2",
-      "idUser": "1",
-      "idQuiz": "1",
-      "score": 0,
-      "startDate": "2024-04-08 21:16:47",
-      "endDate": "2024-04-08 21:22:43"
+      "startDate": "2024-04-11 16:22:37",
+      "endDate": "2024-04-11 16:22:53"
     }
   ]
 }
